@@ -10,6 +10,8 @@ import UIKit
 
 class ToDoCell: UITableViewCell {
 
+    @IBOutlet weak var taskTextLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

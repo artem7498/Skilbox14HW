@@ -6,4 +6,27 @@
 //  Copyright © 2020 Artem A. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import RealmSwift
+
+
+class RealmWork {
+    
+  static let shared = RealmWork()
+  
+  private let realm = try! Realm()
+  
+    func getItems() -> Results<Task>{
+        realm.objects(Task.self)
+    }
+    
+    func save(item: Task) {
+      try! realm.write{
+          realm.add(item)
+        }
+    }
+}
+  
+  
+  
+  
