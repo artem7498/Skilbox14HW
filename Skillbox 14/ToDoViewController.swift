@@ -4,7 +4,7 @@
 //
 //  Created by Артём on 5/24/20.
 //  Copyright © 2020 Artem A. All rights reserved.
-// ghbtv ghbtv  ,jvlgj b,.v 
+// ghbtv 
 
 import UIKit
 import RealmSwift
