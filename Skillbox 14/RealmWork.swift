@@ -25,6 +25,12 @@ class RealmWork {
           realm.add(item)
         }
     }
+    
+    func delete(item: Task) {
+    try! realm.write{
+        realm.delete(item)
+        }
+    }
 }
   
   

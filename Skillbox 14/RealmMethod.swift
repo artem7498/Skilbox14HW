@@ -12,14 +12,8 @@ import RealmSwift
 
 class Task: Object {
     
-    dynamic var taskName = ""
+    @objc dynamic var taskName = ""
     
-    func test() {
-    let dog = Task()
-    dog.taskName = "Eat something"
-        
-        try! realm?.write { realm!.add(dog)}
-    }
 }
 
 
