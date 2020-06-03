@@ -7,35 +7,33 @@
 
 
 import UIKit
-import RealmSwift
 
 class ToDoViewController: UIViewController, UITableViewDelegate {
+    @IBOutlet weak var tableView: UITableView!
     
-    var realm : Realm!
+   
     var tasksList = RealmWork.shared.getItems()
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        realm = try! Realm()
-        
         print(tasksList)
-        
-
-        // Do any additional setup after loading the view.
     }
     
     @IBOutlet weak var input: UITextField!
     @IBAction func addItem(_ sender: Any) {
+         
+        RealmWork.shared.save(name: input.text ?? "")
+            
+        reloadData()
+            
+        }
         
-            let task = Task()
-            task.taskName = input.text ?? ""
-            RealmWork.shared.save(item: task)
+        private func reloadData() {
             tasksList = RealmWork.shared.getItems()
-           
-        
-    }
+            tableView.reloadData()
+        }
 }
     
     
@@ -61,10 +59,8 @@ class ToDoViewController: UIViewController, UITableViewDelegate {
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCell.EditingStyle.delete {
 
-
-            realm.beginWrite()
-            realm.delete(tasksList[indexPath.row])
-            try! realm.commitWrite()
+            RealmWork.shared.remove(index: indexPath.row)
+            reloadData()
 
         }
     }

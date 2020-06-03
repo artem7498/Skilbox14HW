@@ -109,7 +109,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwy-Gf-TnL">
-                                                    <rect key="frame" x="20" y="11" width="42" height="21"/>
+                                                    <rect key="frame" x="20" y="11" width="374" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -142,11 +142,12 @@
                     </view>
                     <connections>
                         <outlet property="input" destination="1Wj-ag-y84" id="qgO-De-PfA"/>
+                        <outlet property="tableView" destination="FIj-iL-gcp" id="tyG-oi-PFb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hdE-Yx-yv3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1291" y="61"/>
+            <point key="canvasLocation" x="1289.8550724637682" y="60.9375"/>
         </scene>
     </scenes>
 </document>

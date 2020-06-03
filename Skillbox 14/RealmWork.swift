@@ -20,15 +20,18 @@ class RealmWork {
         realm.objects(Task.self)
     }
     
-    func save(item: Task) {
-      try! realm.write{
-          realm.add(item)
+    func save(name: String) {
+        let task = Task()
+        task.taskName = name
+        try! realm.write{
+            realm.add(task)
         }
     }
-    
-    func delete(item: Task) {
-    try! realm.write{
-        realm.delete(item)
+       
+    func remove(index: Int){
+        let item = realm.objects(Task.self)[index]
+        try! realm.write {
+            realm.delete(item)
         }
     }
 }
