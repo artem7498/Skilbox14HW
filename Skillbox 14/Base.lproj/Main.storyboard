@@ -108,14 +108,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwy-Gf-TnL">
-                                                    <rect key="frame" x="20" y="11" width="374" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwy-Gf-TnL">
+                                                    <rect key="frame" x="30" y="11.5" width="354" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="hwy-Gf-TnL" secondAttribute="trailing" constant="10" id="7qL-FQ-xxT"/>
+                                                <constraint firstItem="hwy-Gf-TnL" firstAttribute="centerY" secondItem="Xib-5R-jb0" secondAttribute="centerY" id="SsE-vM-y67"/>
+                                                <constraint firstItem="hwy-Gf-TnL" firstAttribute="leading" secondItem="Xib-5R-jb0" secondAttribute="leadingMargin" constant="10" id="oDG-Mo-zKa"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="taskTextLabel" destination="hwy-Gf-TnL" id="4D2-H4-LM4"/>
@@ -148,6 +152,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hdE-Yx-yv3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1289.8550724637682" y="60.9375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GHP-o3-zsA">
+            <objects>
+                <viewController id="QeF-8w-JB3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9yT-9z-Ufv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Mj3-3M-fxY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oGn-sW-Zxc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="193" y="752"/>
         </scene>
     </scenes>
 </document>

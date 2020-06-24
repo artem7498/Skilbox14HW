@@ -7,6 +7,7 @@
 
 
 import UIKit
+import RealmSwift
 
 class ToDoViewController: UIViewController, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
@@ -49,12 +50,26 @@ class ToDoViewController: UIViewController, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! ToDoCell
-
+        
+        cell.selectionStyle = .blue
         let task = tasksList[indexPath.row]
         cell.taskTextLabel!.text = task.taskName
+        cell.accessoryType = task.isChecked ? .checkmark : .none
 
         return cell
     }
+        
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let task = tasksList[indexPath.row]
+//        let realm = try! Realm()
+//        try! realm.write{
+//            task.checked = !task.checked
+        RealmWork.shared.checkIt(index: indexPath.row)
+//        }
+        reloadData()
+            
+            
+        }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCell.EditingStyle.delete {

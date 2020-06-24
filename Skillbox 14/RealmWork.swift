@@ -23,8 +23,15 @@ class RealmWork {
     func save(name: String) {
         let task = Task()
         task.taskName = name
-        try! realm.write{
+        try! realm.write {
             realm.add(task)
+        }
+    }
+    
+    func checkIt(index: Int) {
+        let item = realm.objects(Task.self)[index]
+        try! realm.write {
+            item.isChecked = !item.isChecked
         }
     }
        

@@ -13,7 +13,7 @@ import RealmSwift
 class Task: Object {
     
     @objc dynamic var taskName = ""
-    
+    @objc dynamic var isChecked = false
 }
 
 
