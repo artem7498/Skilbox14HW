@@ -34,6 +34,14 @@ class RealmWork {
             item.isChecked = !item.isChecked
         }
     }
+    
+    func editTaskName(newName: String, index: Int){
+        let item = realm.objects(Task.self)[index]
+        try! realm.write {
+            item.taskName = newName
+        }
+        
+    }
        
     func remove(index: Int){
         let item = realm.objects(Task.self)[index]

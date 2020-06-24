@@ -7,7 +7,6 @@
 
 
 import UIKit
-import RealmSwift
 
 class ToDoViewController: UIViewController, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
@@ -24,21 +23,34 @@ class ToDoViewController: UIViewController, UITableViewDelegate {
     
     @IBOutlet weak var input: UITextField!
     @IBAction func addItem(_ sender: Any) {
-         
         RealmWork.shared.save(name: input.text ?? "")
-            
         reloadData()
-            
         }
+    
+    func editButtonDidClick(index: Int) {
+        let alertController = UIAlertController(title: "Edit Task", message: "", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Save", style: .default, handler: {
+            alert -> Void in
+            let textField = alertController.textFields![0] as UITextField
+            let newTaskName = textField.text ?? ""
+            RealmWork.shared.editTaskName(newName: newTaskName, index: index)
+            self.reloadData()
+        }))
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alertController.addTextField(configurationHandler: {(textField : UITextField!) -> Void in
+            textField.placeholder = "New Task Text"
+        })
+        self.present(alertController, animated: true, completion: nil)
+    }
         
-        private func reloadData() {
-            tasksList = RealmWork.shared.getItems()
-            tableView.reloadData()
+    private func reloadData() {
+        tasksList = RealmWork.shared.getItems()
+        tableView.reloadData()
         }
 }
     
     
-    extension ToDoViewController: UITableViewDataSource {
+extension ToDoViewController: UITableViewDataSource {
         
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -60,24 +72,26 @@ class ToDoViewController: UIViewController, UITableViewDelegate {
     }
         
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let task = tasksList[indexPath.row]
-//        let realm = try! Realm()
-//        try! realm.write{
-//            task.checked = !task.checked
         RealmWork.shared.checkIt(index: indexPath.row)
-//        }
         reloadData()
+    }
+        
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let delete = UIContextualAction(style: .destructive, title: "Delete") {  (contextualAction, view, boolValue) in
             
-            
-        }
-    
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == UITableViewCell.EditingStyle.delete {
-
             RealmWork.shared.remove(index: indexPath.row)
-            reloadData()
-
+            self.reloadData()
         }
+        let edit = UIContextualAction(style: .normal, title: "Edit") {  (contextualAction, view, boolValue) in
+            self.editButtonDidClick(index: indexPath.row)
+            self.reloadData()
+        }
+        edit.backgroundColor = .gray
+        
+        let swipeActions = UISwipeActionsConfiguration(actions: [delete, edit])
+
+        return swipeActions
+        
     }
 }
 
