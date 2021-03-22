@@ -14,8 +14,6 @@ class ToDoViewController: UIViewController, UITableViewDelegate {
    
     var tasksList = RealmWork.shared.getItems()
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         print(tasksList)

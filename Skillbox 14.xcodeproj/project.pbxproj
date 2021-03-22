@@ -11,13 +11,16 @@
 		AC0F7DC4247E1F2500C95834 /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0F7DC3247E1F2500C95834 /* ToDoCell.swift */; };
 		AC37A7F2247A2F5900E2C456 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC37A7F1247A2F5900E2C456 /* AppDelegate.swift */; };
 		AC37A7F4247A2F5900E2C456 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC37A7F3247A2F5900E2C456 /* SceneDelegate.swift */; };
-		AC37A7F6247A2F5900E2C456 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC37A7F5247A2F5900E2C456 /* ViewController.swift */; };
 		AC37A7F9247A2F5900E2C456 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC37A7F7247A2F5900E2C456 /* Main.storyboard */; };
 		AC37A7FB247A2F5B00E2C456 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC37A7FA247A2F5B00E2C456 /* Assets.xcassets */; };
 		AC37A7FE247A2F5B00E2C456 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC37A7FC247A2F5B00E2C456 /* LaunchScreen.storyboard */; };
-		AC37A806247A407800E2C456 /* UserDefaultsMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC37A805247A407800E2C456 /* UserDefaultsMethod.swift */; };
 		AC37A808247A5D5200E2C456 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC37A807247A5D5200E2C456 /* ToDoViewController.swift */; };
-		AC37A80A247B87CE00E2C456 /* RealmMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC37A809247B87CE00E2C456 /* RealmMethod.swift */; };
+		AC37A80A247B87CE00E2C456 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC37A809247B87CE00E2C456 /* RealmModel.swift */; };
+		AC65C085254D4B6E0006B9F8 /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65C084254D4B6E0006B9F8 /* MVVMViewController.swift */; };
+		AC65C088254D4B840006B9F8 /* MVVMTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65C087254D4B840006B9F8 /* MVVMTableViewCell.swift */; };
+		AC65C08B254D4DF90006B9F8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65C08A254D4DF90006B9F8 /* ViewModel.swift */; };
+		AC65C09D254D5ED50006B9F8 /* MVVMRealmWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65C09C254D5ED50006B9F8 /* MVVMRealmWork.swift */; };
+		AC65C0A1254D5F220006B9F8 /* MVVMRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65C0A0254D5F220006B9F8 /* MVVMRealmModel.swift */; };
 		C776810750FFAADB8533B210 /* Pods_Skillbox_14.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B93ADE847B051C1C8117E8CE /* Pods_Skillbox_14.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,14 +32,17 @@
 		AC37A7EE247A2F5900E2C456 /* Skillbox 14.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Skillbox 14.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC37A7F1247A2F5900E2C456 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC37A7F3247A2F5900E2C456 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AC37A7F5247A2F5900E2C456 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC37A7F8247A2F5900E2C456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC37A7FA247A2F5B00E2C456 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC37A7FD247A2F5B00E2C456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC37A7FF247A2F5B00E2C456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC37A805247A407800E2C456 /* UserDefaultsMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsMethod.swift; sourceTree = "<group>"; };
 		AC37A807247A5D5200E2C456 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
-		AC37A809247B87CE00E2C456 /* RealmMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmMethod.swift; sourceTree = "<group>"; };
+		AC37A809247B87CE00E2C456 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		AC65C084254D4B6E0006B9F8 /* MVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
+		AC65C087254D4B840006B9F8 /* MVVMTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMTableViewCell.swift; sourceTree = "<group>"; };
+		AC65C08A254D4DF90006B9F8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		AC65C09C254D5ED50006B9F8 /* MVVMRealmWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMRealmWork.swift; sourceTree = "<group>"; };
+		AC65C0A0254D5F220006B9F8 /* MVVMRealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMRealmModel.swift; sourceTree = "<group>"; };
 		B93ADE847B051C1C8117E8CE /* Pods_Skillbox_14.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skillbox_14.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -92,18 +98,37 @@
 			children = (
 				AC37A7F1247A2F5900E2C456 /* AppDelegate.swift */,
 				AC37A7F3247A2F5900E2C456 /* SceneDelegate.swift */,
-				AC37A7F5247A2F5900E2C456 /* ViewController.swift */,
-				AC37A805247A407800E2C456 /* UserDefaultsMethod.swift */,
-				AC37A807247A5D5200E2C456 /* ToDoViewController.swift */,
-				AC37A809247B87CE00E2C456 /* RealmMethod.swift */,
-				AC0F7DC1247E1C0900C95834 /* RealmWork.swift */,
-				AC0F7DC3247E1F2500C95834 /* ToDoCell.swift */,
+				AC65C081254D36730006B9F8 /* MVC */,
+				AC65C083254D4B520006B9F8 /* MVVM */,
 				AC37A7F7247A2F5900E2C456 /* Main.storyboard */,
 				AC37A7FA247A2F5B00E2C456 /* Assets.xcassets */,
 				AC37A7FC247A2F5B00E2C456 /* LaunchScreen.storyboard */,
 				AC37A7FF247A2F5B00E2C456 /* Info.plist */,
 			);
 			path = "Skillbox 14";
+			sourceTree = "<group>";
+		};
+		AC65C081254D36730006B9F8 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				AC37A807247A5D5200E2C456 /* ToDoViewController.swift */,
+				AC37A809247B87CE00E2C456 /* RealmModel.swift */,
+				AC0F7DC1247E1C0900C95834 /* RealmWork.swift */,
+				AC0F7DC3247E1F2500C95834 /* ToDoCell.swift */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		AC65C083254D4B520006B9F8 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				AC65C084254D4B6E0006B9F8 /* MVVMViewController.swift */,
+				AC65C087254D4B840006B9F8 /* MVVMTableViewCell.swift */,
+				AC65C08A254D4DF90006B9F8 /* ViewModel.swift */,
+				AC65C0A0254D5F220006B9F8 /* MVVMRealmModel.swift */,
+				AC65C09C254D5ED50006B9F8 /* MVVMRealmWork.swift */,
+			);
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +160,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = "Artem A.";
 				TargetAttributes = {
 					AC37A7ED247A2F5900E2C456 = {
@@ -222,13 +247,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC37A808247A5D5200E2C456 /* ToDoViewController.swift in Sources */,
-				AC37A806247A407800E2C456 /* UserDefaultsMethod.swift in Sources */,
-				AC37A80A247B87CE00E2C456 /* RealmMethod.swift in Sources */,
-				AC37A7F6247A2F5900E2C456 /* ViewController.swift in Sources */,
+				AC65C08B254D4DF90006B9F8 /* ViewModel.swift in Sources */,
+				AC37A80A247B87CE00E2C456 /* RealmModel.swift in Sources */,
+				AC65C085254D4B6E0006B9F8 /* MVVMViewController.swift in Sources */,
+				AC65C088254D4B840006B9F8 /* MVVMTableViewCell.swift in Sources */,
 				AC0F7DC2247E1C0900C95834 /* RealmWork.swift in Sources */,
 				AC37A7F2247A2F5900E2C456 /* AppDelegate.swift in Sources */,
+				AC65C0A1254D5F220006B9F8 /* MVVMRealmModel.swift in Sources */,
 				AC37A7F4247A2F5900E2C456 /* SceneDelegate.swift in Sources */,
 				AC0F7DC4247E1F2500C95834 /* ToDoCell.swift in Sources */,
+				AC65C09D254D5ED50006B9F8 /* MVVMRealmWork.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +308,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -340,6 +369,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -374,7 +404,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7MQ354KRU3;
 				INFOPLIST_FILE = "Skillbox 14/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,7 +424,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7MQ354KRU3;
 				INFOPLIST_FILE = "Skillbox 14/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
