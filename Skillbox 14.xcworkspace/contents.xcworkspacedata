@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Skillbox 14.xcodeproj">
+      location = "group:/Users/artem/Desktop/SkillboxHomework/Skillbox2.4ToDo/Skillbox 2.4ToDo MVVM,MVC.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

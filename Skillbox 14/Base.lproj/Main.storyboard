@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rv8-2I-f2X">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xJY-fj-agG">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--To Do View Controller-->
+        <!--MVC-->
         <scene sceneID="f53-0P-bLK">
             <objects>
-                <viewController id="IB5-uA-doR" customClass="ToDoViewController" customModule="Skillbox_14" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IB5-uA-doR" customClass="ToDoViewController" customModule="Skillbox_2_4ToDo_MVVM_MVC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eVa-j3-vQD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,10 +44,10 @@
                                 </constraints>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FIj-iL-gcp">
-                                <rect key="frame" x="0.0" y="84" width="414" height="778"/>
+                                <rect key="frame" x="0.0" y="84" width="414" height="729"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="t7S-UU-DAA" customClass="ToDoCell" customModule="Skillbox_14" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="t7S-UU-DAA" customClass="ToDoCell" customModule="Skillbox_2_4ToDo_MVVM_MVC" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="t7S-UU-DAA" id="Xib-5R-jb0">
@@ -90,6 +90,7 @@
                             <constraint firstItem="UE0-rn-sb7" firstAttribute="top" secondItem="DNf-jl-c57" secondAttribute="top" id="sMY-Kn-CtC"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="MVC" image="pencil.circle" catalog="system" id="I85-3O-fF1"/>
                     <connections>
                         <outlet property="input" destination="1Wj-ag-y84" id="qgO-De-PfA"/>
                         <outlet property="tableView" destination="FIj-iL-gcp" id="tyG-oi-PFb"/>
@@ -97,12 +98,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hdE-Yx-yv3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1300" y="63"/>
+            <point key="canvasLocation" x="2208.695652173913" y="62.946428571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--MVVM-->
         <scene sceneID="Ka5-NW-5JI">
             <objects>
-                <viewController id="Rv8-2I-f2X" customClass="MVVMViewController" customModule="Skillbox_14" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Rv8-2I-f2X" customClass="MVVMViewController" customModule="Skillbox_2_4ToDo_MVVM_MVC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bV6-f5-Uf9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,10 +135,10 @@
                                 </constraints>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tLR-FF-6wR">
-                                <rect key="frame" x="0.0" y="84" width="414" height="778"/>
+                                <rect key="frame" x="0.0" y="84" width="414" height="729"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="sVh-Nd-OxC" customClass="MVVMTableViewCell" customModule="Skillbox_14" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="sVh-Nd-OxC" customClass="MVVMTableViewCell" customModule="Skillbox_2_4ToDo_MVVM_MVC" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sVh-Nd-OxC" id="hZt-BB-3R4">
@@ -180,6 +181,7 @@
                             <constraint firstItem="VFz-O2-K3n" firstAttribute="top" secondItem="kiu-40-eX6" secondAttribute="top" id="ydi-aA-T3x"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="MVVM" image="pencil.circle.fill" catalog="system" id="Yhc-BN-vhY"/>
                     <connections>
                         <outlet property="tableView" destination="tLR-FF-6wR" id="z7N-0L-VAf"/>
                         <outlet property="toDoTextField" destination="h7j-hk-h7n" id="mmk-mb-iHx"/>
@@ -187,10 +189,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Tp-WY-ELq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2057" y="63"/>
+            <point key="canvasLocation" x="2966.666666666667" y="62.946428571428569"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="MKT-2z-WbX">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="xJY-fj-agG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="01P-Ni-gxQ">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="IB5-uA-doR" kind="relationship" relationship="viewControllers" id="cDY-kQ-4Kb"/>
+                        <segue destination="Rv8-2I-f2X" kind="relationship" relationship="viewControllers" id="7gO-MO-u0Z"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EGO-Zg-kjH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1352" y="63"/>
         </scene>
     </scenes>
     <resources>
+        <image name="pencil.circle" catalog="system" width="128" height="121"/>
+        <image name="pencil.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

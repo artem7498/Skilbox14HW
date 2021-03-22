@@ -29,7 +29,7 @@
 		9BC2687F5726ED84AD915F45 /* Pods-Skillbox 14.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skillbox 14.release.xcconfig"; path = "Target Support Files/Pods-Skillbox 14/Pods-Skillbox 14.release.xcconfig"; sourceTree = "<group>"; };
 		AC0F7DC1247E1C0900C95834 /* RealmWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmWork.swift; sourceTree = "<group>"; };
 		AC0F7DC3247E1F2500C95834 /* ToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
-		AC37A7EE247A2F5900E2C456 /* Skillbox 14.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Skillbox 14.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC37A7EE247A2F5900E2C456 /* Skillbox 2.4ToDo MVVM,MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Skillbox 2.4ToDo MVVM,MVC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC37A7F1247A2F5900E2C456 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC37A7F3247A2F5900E2C456 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AC37A7F8247A2F5900E2C456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 		AC37A7EF247A2F5900E2C456 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC37A7EE247A2F5900E2C456 /* Skillbox 14.app */,
+				AC37A7EE247A2F5900E2C456 /* Skillbox 2.4ToDo MVVM,MVC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,9 +134,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AC37A7ED247A2F5900E2C456 /* Skillbox 14 */ = {
+		AC37A7ED247A2F5900E2C456 /* Skillbox 2.4ToDo MVVM,MVC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC37A802247A2F5B00E2C456 /* Build configuration list for PBXNativeTarget "Skillbox 14" */;
+			buildConfigurationList = AC37A802247A2F5B00E2C456 /* Build configuration list for PBXNativeTarget "Skillbox 2.4ToDo MVVM,MVC" */;
 			buildPhases = (
 				67AF933BF51C2119CFEC9A37 /* [CP] Check Pods Manifest.lock */,
 				AC37A7EA247A2F5900E2C456 /* Sources */,
@@ -148,9 +148,9 @@
 			);
 			dependencies = (
 			);
-			name = "Skillbox 14";
+			name = "Skillbox 2.4ToDo MVVM,MVC";
 			productName = "Skillbox 14";
-			productReference = AC37A7EE247A2F5900E2C456 /* Skillbox 14.app */;
+			productReference = AC37A7EE247A2F5900E2C456 /* Skillbox 2.4ToDo MVVM,MVC.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -168,7 +168,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AC37A7E9247A2F5900E2C456 /* Build configuration list for PBXProject "Skillbox 14" */;
+			buildConfigurationList = AC37A7E9247A2F5900E2C456 /* Build configuration list for PBXProject "Skillbox 2.4ToDo MVVM,MVC" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -181,7 +181,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AC37A7ED247A2F5900E2C456 /* Skillbox 14 */,
+				AC37A7ED247A2F5900E2C456 /* Skillbox 2.4ToDo MVVM,MVC */,
 			);
 		};
 /* End PBXProject section */
@@ -441,7 +441,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AC37A7E9247A2F5900E2C456 /* Build configuration list for PBXProject "Skillbox 14" */ = {
+		AC37A7E9247A2F5900E2C456 /* Build configuration list for PBXProject "Skillbox 2.4ToDo MVVM,MVC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC37A800247A2F5B00E2C456 /* Debug */,
@@ -450,7 +450,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC37A802247A2F5B00E2C456 /* Build configuration list for PBXNativeTarget "Skillbox 14" */ = {
+		AC37A802247A2F5B00E2C456 /* Build configuration list for PBXNativeTarget "Skillbox 2.4ToDo MVVM,MVC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC37A803247A2F5B00E2C456 /* Debug */,
