@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rv8-2I-f2X">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rv8-2I-f2X">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -38,7 +38,7 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="1Wj-ag-y84" firstAttribute="width" secondItem="RaC-k9-5yL" secondAttribute="height" multiplier="145:17" id="06D-HP-dAQ"/>
+                                    <constraint firstItem="1Wj-ag-y84" firstAttribute="width" secondItem="RaC-k9-5yL" secondAttribute="height" multiplier="145:17" priority="750" id="06D-HP-dAQ"/>
                                     <constraint firstItem="RaC-k9-5yL" firstAttribute="leading" secondItem="1Wj-ag-y84" secondAttribute="trailing" id="DRd-bB-nDj"/>
                                     <constraint firstAttribute="height" constant="40" id="PVT-ku-Czm"/>
                                 </constraints>
@@ -129,7 +129,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="24Q-jZ-TZS" firstAttribute="leading" secondItem="h7j-hk-h7n" secondAttribute="trailing" id="PfE-kZ-s5A"/>
-                                    <constraint firstItem="h7j-hk-h7n" firstAttribute="width" secondItem="24Q-jZ-TZS" secondAttribute="height" multiplier="145:17" id="W7T-0b-n7m"/>
+                                    <constraint firstItem="h7j-hk-h7n" firstAttribute="width" secondItem="24Q-jZ-TZS" secondAttribute="height" multiplier="145:17" priority="750" id="W7T-0b-n7m"/>
                                     <constraint firstAttribute="height" constant="40" id="W9T-tx-F9T"/>
                                 </constraints>
                             </stackView>
